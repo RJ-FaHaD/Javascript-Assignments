@@ -26,3 +26,8 @@ h1{font-family: "Cinzel", serif;
 .text-3x1{
     width: 80px;
 }
+P2{
+    text-align: center;
+    justify-content: center;
+    text-decoration: rgb(192, 241, 241);
+}
