@@ -2,3 +2,26 @@
 h1{
     background-color: rgb(211, 116, 7);
 }
+
+.text-center{
+    text-decoration: white;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+body > img{
+    height: fit-content;
+}
+
+.names{
+    border: yellowgreen;
+    text-decoration-color: black;
+    align-items: center;
+    margin-top: 50px;
+
+}

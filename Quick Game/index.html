@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body id="container"> 
+<div class="container" >
+    <h1 style="font-size: 40px; color: rgb(170, 236, 95); text-align: center; font-family: Impact, 'Arial Narrow Bold', sans-serif; font-style: italic;" id="quick">QUICK STOP</h1>
+    <h1 id="number" class="number">00</h1>
+    <div class="input">
+        <input placeholder="Write Your Number" id="user_input" type="number">
+    </div>
+    
+   <span class="bo">
+       <button id="start_btn" onclick="start()" class="button">start</button>
+       <button onclick="stop()" class="button">stop</button>
+   </span>
+</div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
