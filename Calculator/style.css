@@ -1,0 +1,33 @@
+
+
+button:hover{
+    background-color: rgb(87, 215, 224);
+    
+}
+.main{
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.input{
+    height: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-right: 10px;
+
+}
+::placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic, oblique;
+    text-align: center;
+}
+.result{
+    text-decoration-color: white;
+    color: white;
+    font-family:  'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+
+}
+button{
+    font-size: large;
+}
