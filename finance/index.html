@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h2{
+         font-weight: lighter;
+         font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Finance</h1>
+
+
+    <div class="container">
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button onclick="addIncome()">Income</button>
+        <button onclick="addExpense()">Expense</button>
+        <div class="heading">
+        <h2>Income: <span id="incomeValue">0</span></h2>
+        <h2>Expense: <span id=" expenseValue">0</span></h2>
+        <h2>Savings: <span id=" savingsValue">0</span></h2>
+        </div>
+      </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
