@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      align-items: center;
+      background-color: darkgoldenrod;
+      color: black;
+    }
+    #counter {
+      font-size: 36px;
+      margin-bottom: 20px;
+      transition: color 0.3s ease-in-out;
+      margin-top: 100px;
+    }
+    #even-odd {
+      font-style: italic;
+      margin-bottom: 20px;
+      transition: opacity 0.3s ease-in-out;
+    }
+    #history {
+      margin-bottom: 20px;
+      transition: opacity 0.3s ease-in-out;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    button:hover {
+      background-color: goldenrod;
+      font-weight: bolder;
+    }
+    h1{
+        margin-top: 30px;
+    }
+   </style> 
+</head>
+<body>
+
+  <h1>Counter App</h1>
+  <div id="counter" class="counter">0</div>
+  <div id="even-odd" class="even-odd">Even</div>
+  <div id="history" class="history">History: </div>
+  <button onclick="increment()">Increment</button>
+  <button onclick="decrement()">Decrement</button>
+  <button onclick="reset()">Reset</button>
+
+
+
+</body>
+<script src="app.js"></script>
