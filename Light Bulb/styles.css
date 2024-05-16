@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .lightbulb {
+    width: 200px;
+    height: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+   .On.On:click{
+    background-color: yellow;
+   }
+
+   h1{
+    color: black;
+   }
+
+
+  
+
+  
+  
