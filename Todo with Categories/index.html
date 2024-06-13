@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginPage">
+        <h1>Login</h1>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="container" id="homePage" style="display: none;">
+        <h1>Welcome to your Todo List</h1>
+        <button onclick="logout()">Logout</button>
+        <div class="add-task">
+            <input type="text" id="taskName" placeholder="Task Name">
+            <input type="date" id="dueDate">
+            <select id="category">
+                <option value="Homework">Homework</option>
+                <option value="Exams">Exams</option>
+                <option value="Projects">Projects</option>
+                <option value="Extracurricular Activities">Extracurricular Activities</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="filter-tasks">
+            <select id="filterCategory" onchange="filterTasks()">
+                <option value="All">All</option>
+                <option value="Homework">Homework</option>
+                <option value="Exams">Exams</option>
+                <option value="Projects">Projects</option>
+                <option value="Extracurricular Activities">Extracurricular Activities</option>
+                <option value="Personal">Personal</option>
+            </select>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
