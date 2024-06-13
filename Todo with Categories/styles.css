@@ -1,49 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container" id="loginPage">
-        <h1>Login</h1>
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="login()">Login</button>
-    </div>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a346d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-    <div class="container" id="homePage" style="display: none;">
-        <h1>Welcome to your Todo List</h1>
-        <button onclick="logout()">Logout</button>
-        <div class="add-task">
-            <input type="text" id="taskName" placeholder="Task Name">
-            <input type="date" id="dueDate">
-            <select id="category">
-                <option value="Homework">Homework</option>
-                <option value="Exams">Exams</option>
-                <option value="Projects">Projects</option>
-                <option value="Extracurricular Activities">Extracurricular Activities</option>
-                <option value="Personal">Personal</option>
-            </select>
-            <button onclick="addTask()">Add Task</button>
-        </div>
+.container {
+    background: #344d81;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
 
-        <div class="filter-tasks">
-            <select id="filterCategory" onchange="filterTasks()">
-                <option value="All">All</option>
-                <option value="Homework">Homework</option>
-                <option value="Exams">Exams</option>
-                <option value="Projects">Projects</option>
-                <option value="Extracurricular Activities">Extracurricular Activities</option>
-                <option value="Personal">Personal</option>
-            </select>
-        </div>
+.add-task > input{
+    display: flex;
+    align-items: center;
+} 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        <ul id="taskList"></ul>
-    </div>
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+button {
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e7e7e7;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
