@@ -4,59 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    </style>
-    <title>Javascript-Assignments</title>
 </head>
-<body background="https://www.theglobeandmail.com/resizer/v2/N6BYYJH7JNF4BO4QB327X5ONXE?auth=34d6f01c767918dc32ecbaac20c075673db5b7838390a224f2502b7332f37889&width=600&quality=80">
-    <div class="names">
-    <p class="text-center text-2xl">
-    <a href="String Exercise/index.html" class="font-bold">String Exercise</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Dice Game/index.html" class="font-bold">Dice Game</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Clock/index.html" class="font-bold">Clock/CountDown</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Quick Game/index.html" class="font-bold">Quick Game</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Calculator/index.html" class="font-bold">Calculator</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="finance/index.html" class="font-bold">finance</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Counter Application/index.html" class="font-bold">Counter Application</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Light Bulb/index.html" class="font-bold">Light Bulb</a>
-    </p>
+<body class="container bg-sky-500">
+    <h2 class="mainHead">STUDENT REGISTRATION FORM</h2>
+<div class="flex items-center justify-center">
+<form class="bg-card shadow-lg rounded-lg p-8 w-full max-w-xl mx-4 my-2 bg-white">
+
+    <div class="mb-6">
+    <input type="text" id="name" placeholder="WRITE YOUR NAME" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
     </div>
-    <p class="text-center text-2xl">
-        <a href="Text Properties/index.html" class="font-bold">Text Properties</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="To-Do list/index.html" class="font-bold">To-Do list</a>
-    </p>
-    </p>
-    <p class="text-center text-2xl">
-    <a href="Todo for Each User/index.html" class="font-bold">Todo App for Each User</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="Todo with Categories/index.html" class="font-bold">Todo with Categories</a>
-    </p>
-    <p class="text-center text-2xl">
-        <a href="P.Generator/index.html" class="font-bold">Password Generator</a>
-    </p>
- </div>
+
+    <div class="mb-6">
+    <input type="email" id="email" placeholder="WRITE YOUR EMAIL" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+    </div>
+
+    <div class="mb-6">
+        <input type="number" id="number" placeholder="WRITE YOUR NUMBER" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+        </div>
+
+        <div class="mb-6">
+            <input type="date" id="dob" placeholder="WRITE YOUR DOB" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+            </div>
+
+            <div class="mb-6">
+                <input type="text" id="address" placeholder="WRITE YOUR ADDRESS" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+                </div>
+
+                <div class="mb-6">
+                    <select name="Gender" id="gender" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required>
+                     <option value="" disabled selected>Select gender</option>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                     <option value="other">Other</option>
+                    </select>
+                </div>
+
+                    <div class="mb-6">
+                        <input type="password" id="password" placeholder="ENTER YOUR PASSWORD" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+                    </div>
+
+                    <div class="mb-6">
+                        <input type="password" id="confirmPassword" placeholder="CONFIRM YOUR PASSWORD" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+                    </div>
+
+                    <div class="mb-6">
+                        <input type="file" id="image" accept="image" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+                    </div>
+
+                    <div class="mb-6">
+                        <select name="Course" id="course" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required>
+                         <option value="" disabled selected>Select Course</option>
+                         <option value="Web-Development">Web-Development</option>
+                         <option value="Python-Programming">Python-Programming</option>
+                         <option value="Graphic-Designing">Graphic-Designing</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-primary-foreground py-3 px-6 rounded-md hover:bg-primary/80">Submit</button>
+                        <button type="reset" class="bg-rose-600	hover:bg-rose-500 text-destructive-foreground py-3 px-6 rounded-md hover:bg-destructive/80">Reset</button>
+                      </div>
+</form>    
+</div>           
+<script src="app.js"></script>
 </body>
 </html>
