@@ -1,73 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garments and Shoes Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="container bg-sky-500">
-    <h2 class="mainHead">STUDENT REGISTRATION FORM</h2>
-<div class="flex items-center justify-center">
-<form class="bg-card shadow-lg rounded-lg p-8 w-full max-w-xl mx-4 my-2 bg-white">
+<body>
+  <header>
+    <nav>
+      <h1>KHAN's CLOTHING</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="mb-6">
-    <input type="text" id="name" placeholder="WRITE YOUR NAME" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
+  <section id="home" class="banner">
+    <h2>Welcome to KHAN's CLOTHING</h2>
+    <p>Explore the latest collection of KHAN's CLOTHING.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://classyaf.pk/cdn/shop/files/photo-output_3_91620c15-6cd8-4824-aa15-8ff21d6a5b9d.webp?v=1728971266&width=1946" alt="Product 1">
+        <h3>DropShoulder T Shirt</h3>
+        <p>$05</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://jimmyluxury.in/cdn/shop/files/IMG_7134copy_1080x.webp?v=1734418531" alt="Product 2">
+        <h3>Cargo Trousers</h3>
+        <p>$07</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images-cdn.ubuy.co.in/65538fd0f655c8033f6ca0b8-wmns-air-jordan-1-retro-high-og-twist.jpg" alt="Product 1">
+        <h3>Air Jordan  </h3>
+        <p>$15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/87/9e/ae/879eaee02eea8b7bbe99d163dccd8112.jpg" alt="Product 1">
+        <h3>Men's Summer Newspaper Print Shirt</h3>
+        <p>$6.5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://media.boohoo.com/i/boohoo/mzz21327_black_xl/male-black-super-skinny-jeans/?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit" alt="Product 1">
+        <h3>Super Skinny Jeans</h3>
+        <p>$07</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/b6/65/6d/b6656d7c66d4f920acf7171e0b8aed32.jpg" alt="Product 1">
+        <h3>Kashmiri Wool Men's Shawl White</h3>
+        <p>$11</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://najibmaya.pk/cdn/shop/products/6J7A2316_1024x1024@2x.jpg?v=1660822331" alt="Product 1">
+        <h3>Stylish 3 Pecs Coat Pent For Men's</h3>
+        <p>$30</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://najibmaya.pk/cdn/shop/files/DSC_7794_b1b16e50-74f8-4563-bd99-ea624de71b18_1024x1024@2x.jpg?v=1709634924" alt="Product 1">
+        <h3>Green Kurta Pajama + Mirror Work For Men's</h3>
+        <p>$15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
     </div>
+  </section>
 
-    <div class="mb-6">
-    <input type="email" id="email" placeholder="WRITE YOUR EMAIL" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-    </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We specialize in providing high-quality garments and shoes at affordable prices.</p>
+  </section>
 
-    <div class="mb-6">
-        <input type="number" id="number" placeholder="WRITE YOUR NUMBER" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-        </div>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-        <div class="mb-6">
-            <input type="date" id="dob" placeholder="WRITE YOUR DOB" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-            </div>
+  <footer>
+    <p>&copy; 2025 Khan's Clothing. All rights reserved.</p>
+  </footer>
 
-            <div class="mb-6">
-                <input type="text" id="address" placeholder="WRITE YOUR ADDRESS" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-                </div>
-
-                <div class="mb-6">
-                    <select name="Gender" id="gender" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required>
-                     <option value="" disabled selected>Select gender</option>
-                     <option value="male">Male</option>
-                     <option value="female">Female</option>
-                     <option value="other">Other</option>
-                    </select>
-                </div>
-
-                    <div class="mb-6">
-                        <input type="password" id="password" placeholder="ENTER YOUR PASSWORD" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-                    </div>
-
-                    <div class="mb-6">
-                        <input type="password" id="confirmPassword" placeholder="CONFIRM YOUR PASSWORD" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-                    </div>
-
-                    <div class="mb-6">
-                        <input type="file" id="image" accept="image" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required />
-                    </div>
-
-                    <div class="mb-6">
-                        <select name="Course" id="course" class="w-full mt-1 p-3 border border-input rounded-md focus:ring focus:ring-primary focus:ring-opacity-50" required>
-                         <option value="" disabled selected>Select Course</option>
-                         <option value="Web-Development">Web-Development</option>
-                         <option value="Python-Programming">Python-Programming</option>
-                         <option value="Graphic-Designing">Graphic-Designing</option>
-                        </select>
-                    </div>
-
-                    <div class="flex items-center justify-between">
-                        <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-primary-foreground py-3 px-6 rounded-md hover:bg-primary/80">Submit</button>
-                        <button type="reset" class="bg-rose-600	hover:bg-rose-500 text-destructive-foreground py-3 px-6 rounded-md hover:bg-destructive/80">Reset</button>
-                      </div>
-</form>    
-</div>           
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
